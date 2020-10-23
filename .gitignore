@@ -1,0 +1,24 @@
+####################### Systems Folders ########################
+.DS_Store
+########################## Logs #######################
+*.log
+*.log.*
+logs/*.log
+logs/*.log.*
+Logs
+
+########################## IDE #######################
+.idea/
+.vscode/
+########################## project #######################
+package-lock.json
+node_modules/
+misc/
+*.css.map
+conf.json
+**/bundle.js
+**/bundle.js.map
+/dist
+report.**
+coverage/
+
