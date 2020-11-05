@@ -1,0 +1,34 @@
+<section class="container">
+    <section class="ahw-title-wrap">
+        <h3 class="ahw-title">Account list AngularJS</h3>
+        <button type="button" ng-click="ahwAccounts.onClickCreateAccount()" class="btn btn-primary">Create account
+        </button>
+    </section>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>Account name</th>
+            <th>E-mail</th>
+            <th>Status</th>
+            <th>Start date</th>
+            <th>Expiration date</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="item in ahwAccounts.data">
+            <td>{{ item.name }}</td>
+            <td>{{ item.account_name }}</td>
+            <td>{{ item.email }}</td>
+            <td><span class="badge badge-{{item.status| ahwStatusMap}}">{{item.status}}</span></td>
+            <td>{{ item.start_date*1000|date:'dd MMM yyyy' }}</td>
+            <td>{{ item.expiration_date*1000|date:'dd MMM yyyy' }}</td>
+            <td>
+                <button type="button" ng-click="ahwAccounts.deleteAccount(item)" class="btn btn-secondary">Delete
+                </button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</section>

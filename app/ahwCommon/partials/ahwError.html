@@ -1,0 +1,16 @@
+<div class="ahw-error-cont">
+    <div class="ahw-error-inner">
+        <div ng-if="ahwError.status != 500">
+            <img src="../../img/error/error404.png" alt="" />
+            <h3>{{ahwError.status}}</h3>
+            <p class="message">{{ahwError.message}}</p>
+            <p class="return-message">Return to the <a class="return-link" ui-sref="ahwApp.accounts">Home page</a></p>
+        </div>
+        <div ng-if="ahwError.status == 500">
+            <img src="../../img/error/error500.png" alt="" />
+            <h3>{{ahwError.status}}</h3>
+            <p class="message">Sorry, internal server error occurred</p>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,29 @@
+.ahw-error-cont {
+  height: 100%;
+  display: table;
+  width: 100%;
+  .ahw-error-inner {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+  }
+  h3 {
+    margin: 0;
+    font-size: 60px;
+    font-weight: 800;
+  }
+  .message {
+    font-size: $ahw-font-large-size;
+    font-weight: 600;
+    margin: 15px 0 25px;
+  }
+  .return-message {
+    font-size: $ahw-font-medium-size;
+    font-weight: 600;
+    .return-link{
+      color: #F37037;
+      font-weight: 800;
+    }
+  }
+}

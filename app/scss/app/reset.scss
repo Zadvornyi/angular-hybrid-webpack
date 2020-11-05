@@ -1,0 +1,81 @@
+// reset
+*:focus {
+  outline: 0 !important;
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+//-------PATCH for adapting  component to bootstrap 4 ---------
+.fade {
+  &.in {
+    opacity: 1;
+  }
+}
+
+.collapse {
+  &.in {
+    display: block;
+  }
+}
+
+// Modal background
+.modal-backdrop {
+  &.in {
+    opacity: $modal-backdrop-opacity;
+  }
+}
+.modal {
+  &.in {
+    .modal-dialog {
+      transform: $modal-show-transform;
+    }
+  }
+}
+
+[class^="glyphicon-"], [class*=" glyphicon-"] {
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.glyphicon {
+  position: relative;
+  top: 0px;
+  display: inline-block;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.uib-daypicker {
+  table {
+    thead {
+      .btn.btn-default {
+        background-color: #fff;
+        border-color: $ahw-text-color-grey;
+      }
+    }
+  }
+  .glyphicon {
+    position: relative;
+    top: 2px;
+    display: inline-block;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .glyphicon-chevron-left:before{content:"\003C";}
+  .glyphicon-chevron-right:before{content:"\003E";}
+}
+

@@ -1,0 +1,21 @@
+$font-family-base: $ahw-font-base-size;
+
+$body-color: $ahw-text-color;
+
+$grid-columns: $ahw-grid-columns;
+$grid-gutter-width: $ahw-grid-gutter-width;
+
+$border-radius: $ahw-border-radius;
+
+$input-color: $ahw-text-color;
+
+//link
+$link-color: #fff;
+$link-hover-color: $ahw-primary-color;
+$link-hover-decoration: none;
+
+//Form
+$label-margin-bottom: 0 !default;
+
+@import "node_modules/bootstrap/scss/bootstrap";
+

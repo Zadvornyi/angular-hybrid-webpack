@@ -1,0 +1,39 @@
+// -------half padding ------
+.ahw-half-pl {
+  padding-left: $ahw-padding-base/2;;
+}
+.ahw-r-padding {
+  padding-right: $ahw-padding-base;
+}
+.ahw-l-padding {
+  padding-left: $ahw-padding-base;
+}
+// -------ahw-margin half margin ------
+.ahw-r-margin {
+  margin-right: $ahw-margin-base;
+}
+.ahw-l-margin {
+  margin-left: $ahw-margin-base;
+}
+
+.ahw-half-r-margin {
+  margin-right: $ahw-margin-base/2;
+}
+
+.ahw-half-l-margin {
+  margin-left: $ahw-margin-base/2;
+}
+.ahw-half-t-margin {
+  margin-top: $ahw-margin-base/2;
+}
+.ahw-half-b-margin {
+  margin-bottom: $ahw-margin-base/2;
+}
+//--- cursor ----
+.ahw-cursor-cp {
+  cursor: pointer;
+}
+
+.ahw-cursor-default {
+  cursor: default;
+}

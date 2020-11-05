@@ -1,0 +1,29 @@
+{
+    "compilerOptions": {
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "allowSyntheticDefaultImports": true,
+        "outDir": "./build",
+        "sourceMap": true,
+        "noImplicitAny": false,
+        "module": "esnext",
+        "target": "es5",
+        "moduleResolution": "node",
+        "types": [
+            "node",
+            "webpack-env",
+            "jquery"
+        ],
+        "lib": [
+            "dom",
+            "es2015",
+            "es2016"
+        ],
+        "allowJs": true,
+        "skipLibCheck": true
+    },
+    "exclude": [
+        "node_modules",
+        "app/index.aot.ts"
+    ]
+}

@@ -1,0 +1,78 @@
+/*layout*/
+html, body {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+.ahwApp {
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+  position: relative;
+  &:before {
+    content: "";
+    position: absolute;
+    width: inherit;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: $ahw-body-bg;
+    border: inherit;
+    display: block;
+  }
+}
+.ahw-title-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.ahw-title {
+  margin: $ahw-margin-base 0 2*$ahw-margin-base;
+}
+// content
+.ahw-content {
+  height: calc(100% - #{$ahw-header});
+  @include clearfix();
+  position: relative;
+  overflow-x: auto;
+
+}
+.ahw-header {
+  background-color: #414042;
+  min-height: $ahw-header;
+  display: flex;
+  align-items: center;
+  .ahw-logo {
+    margin: 0 $ahw-margin-base/2 0 $ahw-margin-base;
+    color: $ahw-active-color;
+    display: inline-block;
+    vertical-align: middle;
+    border: 3px solid #ffffff;
+    padding: $ahw-padding-base/2;
+    border-radius: $ahw-margin-base/2;
+  }
+  .nav {
+    >li {
+      &.active {
+        box-shadow: inset 0 -4px 0px 0px $ahw-active-color;
+      }
+      .nav-link {
+        padding: 0 1rem;
+        height: $ahw-header;
+        line-height: $ahw-header;
+      }
+    }
+  }
+}
+.full-size {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.ahw-content-body {
+  position: relative;
+  width: auto;
+  height: 100%;
+  overflow-x: auto;
+}

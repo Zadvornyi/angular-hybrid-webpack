@@ -1,0 +1,34 @@
+$ahw-body-bg: #ffffff;
+$ahw-item-bg: #414042;
+$ahw-base-bg: #F0F3F4;
+$ahw-content-bg: #F3F4F5;
+$ahw-font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+$ahw-grid-columns: 60;
+$ahw-grid-gutter-width: 20px;
+$ahw-border-radius: 3px;
+
+$ahw-font-small-size: 10px;
+$ahw-font-alternative-small-size: 11px;
+$ahw-font-semi-small-size: 12px;
+$ahw-font-alternative-base-size: 13px;
+$ahw-font-base-size: 14px;
+$ahw-font-medium-size: 16px;
+$ahw-font-semi-large-size: 18px;
+$ahw-font-large-size: 20px;
+
+$ahw-text-color: #414042;
+$ahw-text-color-darkGrey: #878a8d;
+$ahw-text-color-grey: #B2B5B8;
+$ahw-text-color-lightGrey: #F3F4F5;
+
+$ahw-active-color: #f37037;
+
+$ahw-primary-color: $ahw-active-color;
+$ahw-primary-disabled-color: lighten($ahw-primary-color, 15%);
+$ahw-primary-hover-color: darken($ahw-primary-color, 7%);
+$ahw-primary-active-color: darken($ahw-primary-color, 13%);
+
+$ahw-padding-base: $ahw-grid-gutter-width;
+$ahw-margin-base: $ahw-grid-gutter-width;
+$ahw-header: 60px;
