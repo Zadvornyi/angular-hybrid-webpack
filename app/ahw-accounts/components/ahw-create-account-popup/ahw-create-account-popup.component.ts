@@ -11,7 +11,7 @@ import {AhwAccountsServise} from "../../services/ahw-accounts.servise";
 
 @Component({
     selector: 'ahw-create-account-popup',
-    styleUrls: ['./ahw-create-account-popup.component.scss'],
+    styles: [require('./ahw-create-account-popup.component.scss').toString()],
     templateUrl: './ahw-create-account-popup.component.html'
 
 })

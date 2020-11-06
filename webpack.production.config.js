@@ -1,12 +1,13 @@
 var webpack = require('webpack');
 var path = require('path');
+var ngw  = require('@ngtools/webpack');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
 var TerserPlugin = require('terser-webpack-plugin')
 
 module.exports = {
     mode: 'production',
     entry: {
-        app: path.join(__dirname, './app/index.ts')
+        app: path.join(__dirname, './app/index.aot.ts')
     },
     output: {
         path: path.join(__dirname, './build'),
@@ -45,12 +46,8 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.tsx?$/,
-                use: [
-                    'ts-loader',
-                    'angular2-template-loader',
-                ],
-                exclude: /node_modules/
+                test: /(?:\.ngfactory\.js|\.ngstyle\.js|\.ts)$/,
+                loader: '@ngtools/webpack'
             },
             {
                 // Mark files inside `@angular/core` as using SystemJS style dynamic imports.
@@ -78,7 +75,7 @@ module.exports = {
             },
             {
                 test: /\.(scss|css)$/,
-                use: ['to-string-loader',
+                use: [
                     'style-loader',
                     'css-loader',
                     {
@@ -168,6 +165,10 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './app/index.html',
             hash: true
+        }),
+        new ngw.AngularCompilerPlugin({
+            tsConfigPath: path.join(__dirname, './tsconfig.aot.json'),
+            entryModule:  path.join(__dirname, '../app/index.aot.ts#AhwAngularModule')
         }),
         new webpack.ProvidePlugin({
             $: "jquery",

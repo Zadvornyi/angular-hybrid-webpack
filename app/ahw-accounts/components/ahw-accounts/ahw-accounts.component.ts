@@ -11,7 +11,7 @@ import {AhwCreateAccountPopupComponent} from "../ahw-create-account-popup/ahw-cr
 
 @Component({
     selector: 'ahw-accounts',
-    styleUrls: ['./ahw-accounts.component.scss'],
+    styles: [require('./ahw-accounts.component.scss').toString()],
     templateUrl: './ahw-accounts.component.html'
 })
 export class AhwAccountsComponent {

@@ -7,7 +7,7 @@ import {AhwAccountsServise} from "../../services/ahw-accounts.servise";
 
 @Component({
     selector: 'ahw-accounts-dashboard',
-    styleUrls: ['./ahw-accounts-dashboard.component.scss'],
+    styles: [require('./ahw-accounts-dashboard.component.scss').toString()],
     templateUrl: './ahw-accounts-dashboard.component.html'
 
 })

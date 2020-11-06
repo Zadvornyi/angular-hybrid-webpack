@@ -1,0 +1,33 @@
+{
+    "compilerOptions": {
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "allowSyntheticDefaultImports": true,
+        "outDir": "./build",
+        "sourceMap": true,
+        "noImplicitAny": false,
+        "module": "esnext",
+        "target": "es5",
+        "moduleResolution": "node",
+        "suppressImplicitAnyIndexErrors": true,
+        "types": [
+            "node",
+            "webpack-env",
+            "jquery"
+        ],
+        "lib": [
+            "dom",
+            "es2015",
+            "es2016"
+        ],
+        "allowJs": true,
+        "skipLibCheck": true,
+        "typeRoots": [
+            "node_modules/@types"
+        ]
+    },
+    "exclude": [
+        "node_modules",
+        "app/index.ts"
+    ]
+}

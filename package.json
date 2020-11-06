@@ -38,7 +38,6 @@
         "bootstrap": "^4.5.3",
         "jquery": "^3.5.1",
         "moment": "^2.26.0",
-        "moment-timezone": "^0.5.31",
         "ng2-search-filter": "^0.5.1",
         "normalizr": "^3.6.0",
         "oclazyload": "^1.1.0",

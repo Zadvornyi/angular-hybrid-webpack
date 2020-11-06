@@ -1,5 +1,4 @@
 import 'moment'
-import 'moment-timezone'
 import '@babel/polyfill'
 import 'bootstrap';
 import 'angular-hammer';
