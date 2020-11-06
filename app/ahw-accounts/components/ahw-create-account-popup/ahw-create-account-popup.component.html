@@ -54,6 +54,7 @@
                        [ngClass]="{'is-invalid': formAccountEmail.invalid  && (formAccountEmail.dirty || formAccountEmail.touched)}"
                        [(ngModel)]="account_email"
                        name="account_email"
+                       email
                        required/>
                 <p class="invalid-feedback" *ngIf="formAccountEmail.invalid  && (formAccountEmail.dirty || formAccountEmail.touched)">
                     Invalid field</p>

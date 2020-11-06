@@ -1,9 +1,13 @@
 <section class="container">
+
     <section class="ahw-title-wrap">
         <h3 class="ahw-title">Account list AngularJS</h3>
         <button type="button" ng-click="ahwAccounts.onClickCreateAccount()" class="btn btn-primary">Create account
         </button>
     </section>
+    <ahw-accounts-dashboard title="Using Angular Components from AngularJS Code"
+                            total="{{ahwAccounts.data.length}}">
+    </ahw-accounts-dashboard>
     <table class="table">
         <thead>
         <tr>
@@ -17,7 +21,7 @@
         </tr>
         </thead>
         <tbody>
-        <tr ng-repeat="item in ahwAccounts.data">
+        <tr ng-repeat="item in ahwAccounts.data| orderBy:'start_date'">
             <td>{{ item.name }}</td>
             <td>{{ item.account_name }}</td>
             <td>{{ item.email }}</td>

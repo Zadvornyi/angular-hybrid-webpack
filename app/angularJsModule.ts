@@ -10,6 +10,7 @@ import 'angular-cookies'
 import 'angular-animate'
 import 'angular-touch'
 
+import {ahwAccountsDashboardDowngradePatch} from "./ahw-accounts/components/ahw-accounts-dashboard/ahwAccountsDashboardDowngradePatch";
 export const AhwAngularJsModule = angular.module('ahwApp', [
     'ngAnimate',
     'ngCookies',
@@ -23,7 +24,9 @@ export const AhwAngularJsModule = angular.module('ahwApp', [
     'angular-websocket',
     'angular-storage',
 
-    'ahwAccountsModule'
+    'ahwAccountsModule',
+
+    ahwAccountsDashboardDowngradePatch.name
 ])
 
 require('./ahwCommon/config.js').default(AhwAngularJsModule);

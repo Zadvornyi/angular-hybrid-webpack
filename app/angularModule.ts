@@ -14,8 +14,8 @@ import {UIRouterUpgradeModule} from '@uirouter/angular-hybrid';
 import {HttpClientModule} from '@angular/common/http';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
+import {AhwCommonModule} from './ahw-common/ahw-common.module'
 import {ahwAngularStates} from './ahw-common/ahw.states';
-
 import {AhwWindowRefService} from './ahw-common/services/ahw-window-ref.service';
 import {AhwRootScopeShared} from './ahwCommon/services/ahwRootScopeSharedService';
 
@@ -40,7 +40,9 @@ const GL_APPS_API_URL: { [key: string]: string } = {
         ReactiveFormsModule,
         HttpClientModule,
         // Provides the @uirouter/angular directives
-        UIRouterUpgradeModule.forRoot({states: ahwAngularStates})
+        UIRouterUpgradeModule.forRoot({states: ahwAngularStates}),
+
+        AhwCommonModule
     ],
     schemas: [CUSTOM_ELEMENTS_SCHEMA],
     providers: [

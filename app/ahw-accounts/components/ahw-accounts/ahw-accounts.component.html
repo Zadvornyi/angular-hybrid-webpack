@@ -3,6 +3,10 @@
         <h3 class="ahw-title">Account list Angular</h3>
         <button type="button" (click)="onClickCreateAccount()" class="btn btn-primary">Create account</button>
     </section>
+
+    <ahw-accounts-dashboard *ngIf="data"
+                            [title]="'Using Angular Components from Angular Code'"
+                            [total]="data.length" ></ahw-accounts-dashboard>
     <table class="table">
         <thead>
         <tr>
@@ -16,7 +20,7 @@
         </tr>
         </thead>
         <tbody>
-        <tr *ngFor="let item of data; let i = index">
+        <tr *ngFor="let item of data| ahwSortArray: 'start_date':'desc' let i = index">
             <td>{{ item.name }}</td>
             <td>{{ item.account_name }}</td>
             <td>{{ item.email }}</td>
