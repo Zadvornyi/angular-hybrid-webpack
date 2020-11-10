@@ -2,8 +2,16 @@
 
 This sandbox for showing possibility "hybrid approach", migration from AngularJs to Angular
 
-### Hybrid app, all Angular modules there are in folders which are named in kebab case, appropriately AngularJs modules are named in lowerCamelCase
+#### Hybrid app, all Angular modules there are in folders which are named in kebab case, appropriately AngularJs modules are named in lowerCamelCase
 
+### List of features
+- Ran hybrid angularJs and Angular using ngUpgrade library
+- Implemented @uirouter/angular-hybrid router
+- Downgrade Angular ahw-accounts-dashboard Components and 
+ run in AngularJS Code
+- Injected AngularJS AhwRootScopeShared service to Angular
+- Made AOT compilation for hybrid app
+- etc.
 ## Getting started
 
 Install JSON Server
