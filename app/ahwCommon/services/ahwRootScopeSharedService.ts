@@ -11,8 +11,9 @@ export class AhwRootScopeShared {
         this.$rootScope = $rootScope
         this.$state = $state
     }
+
 }
 
 export default ngModule => {
-    ngModule.service('AhwRootScopeShared', AhwRootScopeShared)
+    ngModule.service('ahwRootScopeShared', AhwRootScopeShared)
 }
