@@ -34,7 +34,7 @@ export class AhwCreateAccountPopupComponent {
 
     constructor(public $state: StateService,
                 public activeModal: NgbActiveModal,
-                public ahwRootScopeShared: AhwWindowRefService,
+                public ahwWindowRef: AhwWindowRefService,
                 public ahwAccountsService: AhwAccountsServise,
                 public ngbCalendar: NgbCalendar) {
 

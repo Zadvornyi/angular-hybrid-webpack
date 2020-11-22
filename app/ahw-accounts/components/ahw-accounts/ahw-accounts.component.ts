@@ -19,7 +19,7 @@ export class AhwAccountsComponent {
 
     constructor(public $state: StateService,
                 private modalService: NgbModal,
-                public ahwRootScopeShared: AhwWindowRefService,
+                public ahwWindowRef: AhwWindowRefService,
                 public ahwAccountsService: AhwAccountsServise) {
     }
 

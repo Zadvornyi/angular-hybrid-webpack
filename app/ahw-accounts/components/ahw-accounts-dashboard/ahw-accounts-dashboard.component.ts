@@ -17,7 +17,7 @@ export class AhwAccountsDashboardComponent {
     @Input('title') title: string;
     
     constructor(public $state: StateService,
-                public ahwRootScopeShared: AhwWindowRefService,
+                public ahwWindowRef: AhwWindowRefService,
                 public ahwAccountsService: AhwAccountsServise) {
     }
     
