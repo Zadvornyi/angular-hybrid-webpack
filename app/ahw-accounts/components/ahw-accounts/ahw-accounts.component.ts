@@ -4,6 +4,8 @@ import {StateService} from '@uirouter/core';
 import {NgbModal} from "@ng-bootstrap/ng-bootstrap";
 
 import {AhwWindowRefService} from "../../../ahw-common/services/ahw-window-ref.service";
+import {AhwRootScopeShared} from '../../../ahwCommon/services/ahwRootScopeSharedService';
+
 import {AhwAccountsServise} from "../../services/ahw-accounts.servise";
 import {AhwCreateAccountPopupComponent} from "../ahw-create-account-popup/ahw-create-account-popup.component"
 
@@ -18,9 +20,10 @@ export class AhwAccountsComponent {
     data: any;
 
     constructor(public $state: StateService,
-                private modalService: NgbModal,
+                public modalService: NgbModal,
                 public ahwWindowRef: AhwWindowRefService,
-                public ahwAccountsService: AhwAccountsServise) {
+                public ahwAccountsService: AhwAccountsServise,
+                public ahwRootScopeShared: AhwRootScopeShared) {
     }
 
     onClickCreateAccount () {
